@@ -9,6 +9,7 @@ movies, ratings = load_data()
 cosine_sim = compute_content_similarity(movies)
 
 # Streamlit UI
+st.set_page_config(page_title="Movie Recommendation System", layout="wide", initial_sidebar_state="collapsed")
 st.title("🎬 Movie Recommendation System")
 
 st.sidebar.header("Choose Recommendation Model")
